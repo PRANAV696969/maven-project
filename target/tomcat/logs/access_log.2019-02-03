@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:09 +0530] "GET /GoVegetarian/ HTTP/1.1" 200 723 http-bio-9966-exec-1 54
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:09 +0530] "GET /GoVegetarian/script.js HTTP/1.1" 304 - http-bio-9966-exec-3 13
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:09 +0530] "GET /GoVegetarian/styles.css HTTP/1.1" 304 - http-bio-9966-exec-2 15
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:09 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9966-exec-4 0
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:13 +0530] "GET /GoVegetarian/register.html HTTP/1.1" 200 782 http-bio-9966-exec-5 8
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:13 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9966-exec-7 0
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:15 +0530] "GET /GoVegetarian/index.html HTTP/1.1" 200 723 http-bio-9966-exec-9 1
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:19 +0530] "POST /GoVegetarian/loginServlet HTTP/1.1" 200 102 http-bio-9966-exec-10 69
+0:0:0:0:0:0:0:1 - - [03/Feb/2019:15:34:30 +0530] "POST /GoVegetarian/loginServlet HTTP/1.1" 200 106 http-bio-9966-exec-10 2

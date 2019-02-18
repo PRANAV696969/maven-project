@@ -1,2 +1,3 @@
 com\sample\login.class
 com\sample\loginServlet.class
+com\sample\registerServlet.class
