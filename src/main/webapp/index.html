@@ -4,19 +4,73 @@
     <meta charset="UTF-8">
     <title>login</title>
     <link rel="stylesheet" href="styles.css">
-    <script type = "text/javascript" src = "script.js" ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+        body{
+        background-image: url("resources/salad.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;;
+        }
+
+        .navbar {
+          overflow: hidden;
+          background-color: #4CAF50;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .navbar a:hover {
+          background: #4CAF50;
+          color: white;
+        }
+
+        .navbar a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        .main {
+          padding: 16px;
+          margin-bottom: 30px;
+        }
+
+     </style>
+
 </head>
 <body>
+
 <div class="login-page">
     <div class="form">
-        <form class="login-form" method = "post" name="loginForm" action="loginServlet">
+        <form class="login-form" method="post" name="loginForm" action="loginServlet">
             <input type="text" name="userName" placeholder="username"/>
             <input type="password" name="password" placeholder="password"/>
-            <button type = "submit">login</button>
+            <button type="submit">login</button>
             <p class="message">Not registered? <a href="register.html">Create an account</a></p>
         </form>
     </div>
 </div>
+<div class="navbar">
+    <a style="float: left; padding-left : 250px;" href="#announcements">Announcements</a>
+    <a style="float: right; padding-right : 250px;" href="#aboutus">About Us </a>
+</div>
+
 
 </body>
 </html>

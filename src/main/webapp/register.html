@@ -5,13 +5,22 @@
     <title>GoVegetarian Sign Up</title>
     <link rel="stylesheet" href="styles.css">
     <script type = "text/javascript" src = "script.js" ></script>
+    <style>
+        body{
+        background-image: url("resources/salad1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    </style>
 </head>
 <div class="register-page">
     <div class="form">
         <form class="register-form" method = "post" name="registerForm" action="registerServlet">
-            <input type="text" name="userName" placeholder="name"/>
+            <input type="text" name="name" placeholder="name"/>
+            <input type="text" name="userName" placeholder="username"/>
             <input type="password" name="password" placeholder="password"/>
             <input type="text" name="email" placeholder="email address"/>
+
             <button type = "submit">create</button>
             <p class="message">Already registered? <a href="index.html">Sign In</a></p>
         </form>

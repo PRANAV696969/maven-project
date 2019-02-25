@@ -1,3 +1,15 @@
-<session-config>
-    <tracking-mode>COOKIE</tracking-mode>
-</session-config>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>com.sample.AuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/result.jsp</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+</web-app>

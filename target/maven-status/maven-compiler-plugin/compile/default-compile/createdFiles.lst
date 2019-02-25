@@ -1,3 +1,5 @@
+com\sample\AuthenticationFilter.class
 com\sample\login.class
 com\sample\loginServlet.class
 com\sample\registerServlet.class
+com\sample\LogoutServlet.class

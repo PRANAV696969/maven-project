@@ -18,6 +18,7 @@ public class registerServlet extends HttpServlet{
 
         boolean rowInserted = false;
 
+        String name     = req.getParameter("name");
         String username = req.getParameter("userName");
         String password = req.getParameter("password");
         String email    = req.getParameter("email");
@@ -26,11 +27,12 @@ public class registerServlet extends HttpServlet{
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/login_db","root",null);
-            String sql = "INSERT INTO login(userName, password, email) VALUES(?,?,?)";
+            String sql = "INSERT INTO login(userName, password, email, name) VALUES(?,?,?,?)";
             PreparedStatement statement=con.prepareStatement(sql);
             statement.setString(1, username);
             statement.setString(2, password);
             statement.setString(3, email);
+            statement.setString(4, name);
 
 
 
