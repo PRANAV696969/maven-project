@@ -5,6 +5,24 @@
     <title>login</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+	$('.toggle-modal').click(function(){
+		$('#myModal').modal('toggle');
+	});
+});
+</script>
+    <script type="text/javascript">
+$(document).ready(function(){
+	$('.ann-modal').click(function(){
+		$('#annModal').modal('toggle');
+	});
+});
+</script>
+
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:300);
         body{
@@ -17,6 +35,41 @@
         margin: 0;
         font-family: "Roboto", sans-serif;;
         }
+        .btn-group{
+        position: absolute;
+    bottom: 0;
+    right: 0;
+        }
+        .btn-group button {
+
+  position: relative;
+
+  background-color: #4CAF50;
+  border: 1px solid green;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+
+
+
+}
+
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
 
         .navbar {
           overflow: hidden;
@@ -50,6 +103,27 @@
           padding: 16px;
           margin-bottom: 30px;
         }
+        .bs-example{
+	margin: 20px;
+}
+.toggle-modal{
+	width: 200px;
+	position: absolute;
+	margin: 0 auto;
+	z-index: 9999;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+}
+.ann-modal{
+	width: 200px;
+	position: absolute;
+	margin: 0 auto;
+	z-index: 9999;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+}
 
      </style>
 
@@ -66,10 +140,62 @@
         </form>
     </div>
 </div>
+<!--
 <div class="navbar">
     <a style="float: left; padding-left : 250px;" href="#announcements">Announcements</a>
     <a style="float: right; padding-right : 250px;" href="#aboutus">About Us </a>
 </div>
+-->
+
+
+
+<div class="btn-group" style="width:100%">
+    <button style="width:33.3%" class="ann-modal">Announcements</button>
+    <button style="width:33.3%" onclick="location.href = 'recipes.html';">Recipes</button>
+    <button style="width:33.3%" class="toggle-modal">About Us</button>
+</div>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">About Us</h4>
+            </div>
+            <div class="modal-body">
+                <p>Vegetarians come from all walks of life. Some are confident in what they eat but others need support and guidance. Many shoppers find it difficult to tell which food and drinks are produced using animal products. Cafes and restaurants often expect vegetarian customers to eat fish. Health professionals receive little or no training in vegetarian nutrition. Hospitals rarely provide nutritious vegetarian meals for patients. Parents are often nervous of allowing their children to follow a vegetarian diet.
+
+                    </p>
+                <p class="text-warning"><small>The Vegetarian Society is here to support and represent all vegetarians.</small></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="annModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Announcements</h4>
+            </div>
+            <div class="modal-body">
+                <p>Society Meeting at JD Hall.
+                </p>
+                <p class="text-warning"><small>12:00 PM 27th February 2019</small></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 </body>

@@ -41,14 +41,20 @@ public class registerServlet extends HttpServlet{
             con.close();
 
             req.setAttribute("rowInserted", rowInserted);
-            RequestDispatcher view = req.getRequestDispatcher("signupresult.jsp");
-            view.forward(req, resp);
+            RequestDispatcher view = req.getRequestDispatcher("/index.html");
+            PrintWriter out = resp.getWriter();
+            out.println("<font color=red><b>SignUp Successful</b></font>");
+            view.include(req, resp);
+          //  view.forward(req, resp);
         }
         catch
                 (Exception e){
             req.setAttribute("rowInserted", rowInserted);
-            RequestDispatcher view = req.getRequestDispatcher("signupresult.jsp");
-            view.forward(req, resp);
+            RequestDispatcher view = req.getRequestDispatcher("/index.html");
+            PrintWriter out = resp.getWriter();
+            out.println("<font size=red><b>SignUp Failed</b></font>");
+            view.include(req, resp);
+          //  view.forward(req, resp);
         }
 
 
